@@ -94,7 +94,7 @@ public class Main {
                 "3- Tiene los descriptores de los distintos segmentos\n" +
                 "4- Ninguna de las anteriores.\n","El Task State Segment (TSS) se utiliza principalmente para guardar el contexto completo de ejecución de un hilo o tarea.",1);
         questions[i++]=new Question("El GDT es quien guarda los descriptores de los distintos segmentos.","Verdadero. La GDT y la LDT se encargan de guardar los descriptores de segmento.",true);
-        questions[i++]=new StrQuestion("¿Quién es el encargado de pasar una dirección virtual a física?","La Memory Management Unit (MMU) se encarga de transformar una dirección virtual a su equivalente física.","mnu");
+        questions[i++]=new StrQuestion("¿Quién es el encargado de pasar una dirección virtual a física?","La Memory Management Unit (MMU) se encarga de transformar una dirección virtual a su equivalente física.","mmu");
         questions[i++]=new Question("Dos páginas en la memoria virtual de dos procesos distintos no pueden ser exactamente la misma página en la memoria física.","Falso, porque podemos tomar el caso de las librerías que están en sólo lectura.",false);
         questions[i++]=new Question("Para Caché se usa Dynamic RAM.","Falso, se usa SRAM.",false);
         questions[i++]=new Question("Utilizar el Caché es más rápido porque cuando se modifica un dato en un determinado bloque de la Caché, no va a hacer falta reemplazarlo en RAM.","Falso, porque en algún momento se debe sincronizar la información en caché y en memoria. Es más rápido porque optimiza no tener que ir a buscar instrucciones en memoria para, por ejemplo, un ciclo. ",false);
