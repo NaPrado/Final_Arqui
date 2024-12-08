@@ -30,12 +30,15 @@ public class Question {
         Scanner sc=new Scanner(System.in);
         do{
             String st=sc.nextLine();
-            if (st.equals("true") || st.equals("t")) {
+            if (st.equalsIgnoreCase("true") || st.equalsIgnoreCase("t") || st.equalsIgnoreCase("yes") || st.equalsIgnoreCase("y") || st.equalsIgnoreCase("v") || st.equalsIgnoreCase("verdadero")|| st.equalsIgnoreCase("facto")) {
                 this.st = true;
                 return;
-            } else if (st.equals("false") || st.equals("f")) {
+            } else if (st.equalsIgnoreCase("false") || st.equalsIgnoreCase("f")|| st.equalsIgnoreCase("no") || st.equalsIgnoreCase("n") || st.equalsIgnoreCase("falso") || st.equalsIgnoreCase("infacto")) {
                 this.st = false;
                 return;
+            } else {
+                System.out.println("invalid input");
+                System.out.println("try again");
             }
         } while (true);
     }

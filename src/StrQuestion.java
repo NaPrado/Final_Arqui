@@ -9,7 +9,7 @@ public class StrQuestion extends Question {
     String state;
     @Override
     public boolean match() {
-        return answer.equals(state);
+        return answer.equalsIgnoreCase(state);
     }
 
     @Override

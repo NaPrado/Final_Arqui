@@ -50,7 +50,7 @@ public class Main {
         questions[i++]=new Question("El canary se coloca entre el EBP y las variables locales. ","Facto",true);
         questions[i++]=new Question("La GOT se utiliza para resolver direcciones las cuales no son conocidas al momento de linkedición.","Verdadero, la Global Offset Table (GOT) se utiliza para resolver direcciones de funciones y variables globales que no son conocidas al momento de la linkedición.",true);
         questions[i++]=new Question("El tipo de memoria SRAM se suele utilizar para la caché. ","Verdadero.",true);
-        questions[i++]=new Question("Las DRAM a pesar de ser no volátiles, no necesitan un refresco de memoria.","Falso porque la DRAM es volátil y sí necesitan un refresco de memoria cada n milisegundos.",true);
+        questions[i++]=new Question("Las DRAM a pesar de ser no volátiles, no necesitan un refresco de memoria.","Falso porque la DRAM es volátil y sí necesitan un refresco de memoria cada n milisegundos.",false);
         questions[i++]=new Question("El Tiempo de Acceso de una memoria se compone de la latencia y la transferencia.","Verdadero. Transferencia: tiempo que tarda un bit en viajar desde el procesador a la memoria. La tasa es casi la misma en todas las computadoras porque depende del cobre. Latencia: tiempo que tarda la memoria en devolver el valor. Es lo que determina la velocidad. Esto quiere decir que una memoria sea más rápida que la otra, qué tan rápido devuelve.",true);
         questions[i++]=new Question("La patita IO/M, si vale 1 hay operaciones con periféricos, si vale 0 con la memoria. ","Verdadero, porque con 1 se accede al mapa de Entrada/Salida.",true);
         questions[i++]=new Question("En un sistema de Entrada y Salida existe el acceso directo a memoria, sin la\n" +
@@ -94,7 +94,7 @@ public class Main {
                 "3- Tiene los descriptores de los distintos segmentos\n" +
                 "4- Ninguna de las anteriores.\n","El Task State Segment (TSS) se utiliza principalmente para guardar el contexto completo de ejecución de un hilo o tarea.",1);
         questions[i++]=new Question("El GDT es quien guarda los descriptores de los distintos segmentos.","Verdadero. La GDT y la LDT se encargan de guardar los descriptores de segmento.",true);
-        questions[i++]=new Question("¿Quién es el encargado de pasar una dirección virtual a física?","La Memory Management Unit (MMU) se encarga de transformar una dirección virtual a su equivalente física.",true);
+        questions[i++]=new StrQuestion("¿Quién es el encargado de pasar una dirección virtual a física?","La Memory Management Unit (MMU) se encarga de transformar una dirección virtual a su equivalente física.","mnu");
         questions[i++]=new Question("Dos páginas en la memoria virtual de dos procesos distintos no pueden ser exactamente la misma página en la memoria física.","Falso, porque podemos tomar el caso de las librerías que están en sólo lectura.",false);
         questions[i++]=new Question("Para Caché se usa Dynamic RAM.","Falso, se usa SRAM.",false);
         questions[i++]=new Question("Utilizar el Caché es más rápido porque cuando se modifica un dato en un determinado bloque de la Caché, no va a hacer falta reemplazarlo en RAM.","Falso, porque en algún momento se debe sincronizar la información en caché y en memoria. Es más rápido porque optimiza no tener que ir a buscar instrucciones en memoria para, por ejemplo, un ciclo. ",false);
